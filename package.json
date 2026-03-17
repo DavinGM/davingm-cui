@@ -1,0 +1,35 @@
+{
+  "name": "davingm-cui",
+  "version": "1.0.0",
+  "description": "UI package for Nuxt ecosystem",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --watch"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "keywords": [
+    "nuxt",
+    "vue",
+    "ui"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "unbuild": "^3.6.1",
+    "unplugin-vue": "^7.1.1",
+    "vue": "^3.5.30"
+  }
+}

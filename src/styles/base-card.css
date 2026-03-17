@@ -1,0 +1,58 @@
+.base-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+}
+.base-card--highlighted {
+  border-color: transparent;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+}
+.base-card__media img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.base-card__body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.base-card__title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.base-card__subtitle {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.7);
+}
+.base-card__description {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.8);
+  line-height: 1.6;
+}
+.base-card__eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6366f1;
+}
+.base-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+.base-card__cta {
+  font-weight: 700;
+  color: #1d4ed8;
+}
+.base-card__actions {
+  display: inline-flex;
+  gap: 0.5rem;
+}
